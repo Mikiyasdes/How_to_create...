@@ -1,0 +1,74 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+.accordion {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item {
+  box-shadow: 0 32px 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.number {
+  font-size: 25px;
+  color: #868e96;
+}
+.text {
+  font-size: 25px;
+  grid-column: 2;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  color: rgb(17, 155, 24);
+}
+.note {
+  grid-column: 2;
+  display: none;
+}
+.note p {
+  margin-bottom: 12px;
+}
+.list {
+  margin-left: 18px;
+  color: #868e96;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.open .note {
+  display: block;
+}
+.open .text {
+  color: rgb(17, 155, 24);
+}
+.open .number {
+  color: rgb(17, 155, 24);
+}
