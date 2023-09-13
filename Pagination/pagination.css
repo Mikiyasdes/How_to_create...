@@ -1,0 +1,75 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin-top: 200px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.num-link:visited,
+.num-link:link {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  color: #343a40;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.num-link:active,
+.num-link:hover {
+  background-color: #087f5b;
+  border-radius: 50%;
+  color: #fff;
+}
+.num-link.link {
+  color: #fff;
+  background-color: #087f5b;
+  border-radius: 50%;
+}
+.btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  color: #087f5b;
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+.btn:hover {
+  background-color: #087f5b;
+}
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
